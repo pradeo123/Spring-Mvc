@@ -12,16 +12,16 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class WelcomeCtrl {
-
+	//TODO
 	@RequestMapping(value= "/init", method= RequestMethod.GET)
 	public ModelAndView initView() {
 		System.out.println("Handler method is called.");
-
+		//TODO
 		ModelAndView modelview = new ModelAndView();
 		modelview.addObject("welcome_msg", "Spring Mvc Internationalization Example");		
 		modelview.setViewName("welcome");
 		return modelview;
-		 
+		//TODO
 	}
 	
 	  int foo(int a) {
