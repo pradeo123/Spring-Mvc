@@ -21,6 +21,7 @@ public class WelcomeCtrl {
 		modelview.addObject("welcome_msg", "Spring Mvc Internationalization Example");		
 		modelview.setViewName("welcome");
 		return modelview;
+		
 	}
 	
 	  int foo(int a) {
