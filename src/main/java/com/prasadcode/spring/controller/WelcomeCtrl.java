@@ -31,6 +31,28 @@ public class WelcomeCtrl {
 		  }
 		  return b;  // Noncompliant
 		}
+	  void foo(){
+		  Boolean condition1=true;
+		  Boolean condition2=true;
+		  Boolean condition3=false;
+		  Boolean condition4=true;
+		  Boolean condition5=true;
+		  if (condition1) {                  // Compliant - depth = 1
+			  /* ... */
+			  if (condition2) {                // Compliant - depth = 2
+			    /* ... */
+			    for(int i = 0; i < 10; i++) {  // Compliant - depth = 3, not exceeding the limit
+			      /* ... */
+			      if (condition4) {            // Noncompliant - depth = 4
+			        if (condition5) {          // Depth = 5, exceeding the limit, but issues are only reported on depth = 4
+			          /* ... */
+			        }
+			        return;
+			      }
+			    }
+			  }
+			}
+	  }
 	//TODO
 	//FIX ME
 }
