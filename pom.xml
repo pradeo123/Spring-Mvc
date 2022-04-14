@@ -14,7 +14,7 @@
   	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
      </properties> 
 	<dependencies>
-		<!-- Servlet API Dependency -->
+		<!-- Servlet API Dependency --> 
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
