@@ -46,11 +46,23 @@ public class WelcomeCtrl {
 			      if (condition4) {            // Noncompliant - depth = 4
 			        if (condition5) {          // Depth = 5, exceeding the limit, but issues are only reported on depth = 4
 			          /* ... */
+			        	 if (condition5) {          // Depth = 5, exceeding the limit, but issues are only reported on depth = 4
+					          /* ... */
+			        		 if (condition5) {          // Depth = 5, exceeding the limit, but issues are only reported on depth = 4
+						          /* ... */
+			        			 if (condition5) {          // Depth = 5, exceeding the limit, but issues are only reported on depth = 4
+			   			          /* ... */
+			   			        }
+						        }
+					        }
 			        }
 			        return;
 			      }
 			    }
 			  }
+			  for (;;) {  // Noncompliant; end condition omitted
+				  // ...
+				}
 			}
 	  }
 	//TODO

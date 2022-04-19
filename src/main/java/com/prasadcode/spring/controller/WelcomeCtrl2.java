@@ -49,9 +49,13 @@ public class WelcomeCtrl2 {
 			        }
 			        return;
 			      }
-			    }
+			    }//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO//TODO
 			  }
 			}
+		  int j=1;
+		  while (true) { // Noncompliant; end condition omitted
+		    j++;
+		  }
 	  }
 	//TODO
 	//FIX ME
