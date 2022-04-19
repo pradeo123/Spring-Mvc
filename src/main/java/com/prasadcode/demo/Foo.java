@@ -15,5 +15,5 @@ public class Foo {
 	public Object clone() {
 		return null; // Noncompliant
 	    //...
-	  }
+	  } 
 }
