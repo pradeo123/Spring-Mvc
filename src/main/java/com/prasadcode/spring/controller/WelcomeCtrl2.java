@@ -23,7 +23,7 @@ public class WelcomeCtrl2 {
 		return modelview;
 		//TODO
 	}
-	
+	@Deprecated
 	  int foo(int a) {
 		  int b = 12;
 		  if (a == 1) {
