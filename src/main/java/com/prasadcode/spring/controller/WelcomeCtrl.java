@@ -63,9 +63,9 @@ public class WelcomeCtrl {
 			      }
 			    }
 			  }
-			  for (;;) {  // Noncompliant; end condition omitted
-				  // ...
-				}
+				/*
+				 * for (;;) { // Noncompliant; end condition omitted // ... }
+				 */
 			}
 	  }
 	//TODO
@@ -84,12 +84,12 @@ public void test_divide() {
 	  }
 	  z = 1 / z; // Noncompliant, possible division by zero
 	  
-	  int target = -5;
-	  int num = 3;
-
-	  target =- num;  // Noncompliant; target = -3. Is that really what's meant?
-	  target =+ num; // Noncompliant; target = 3
-	  
+		/*
+		 * int target = -5; int num = 3;
+		 * 
+		 * target =- num; // Noncompliant; target = -3. Is that really what's meant?
+		 * target =+ num; // Noncompliant; target = 3
+		 */	  
 	}
 
 
