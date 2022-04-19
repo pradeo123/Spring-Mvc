@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @Controller
 @SessionAttributes("hello")
 public class WelcomeCtrl {
-	//TODO
+	//TODO sfdfsdfsdf
 	@RequestMapping(value= "/init", method= RequestMethod.GET)
 	public ModelAndView initView() {
 		System.out.println("Handler method is called.");
@@ -22,8 +22,9 @@ public class WelcomeCtrl {
 		ModelAndView modelview = new ModelAndView();
 		modelview.addObject("welcome_msg", "Spring Mvc Internationalization Example");		
 		modelview.setViewName("welcome");
+		test_divide();
 		return modelview;
-		//TODO
+		//TODO sgsg
 	}
 	
 	  int foo(int a) {
@@ -69,4 +70,18 @@ public class WelcomeCtrl {
 	  }
 	//TODO
 	//FIX ME
+
+
+public void test_divide() {
+	  int z = 0;
+	  if (true) {
+	    // ..
+	    z = 3;
+	  } else {
+	    // ..
+		  
+		  //TODO wirte code
+	  }
+	  z = 1 / z; // Noncompliant, possible division by zero
+	}
 }
