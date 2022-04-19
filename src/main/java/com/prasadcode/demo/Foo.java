@@ -12,4 +12,8 @@ public class Foo {
 	      return 0;
 	    }
 	  }
-	}
+	public Object clone() {
+		return null; // Noncompliant
+	    //...
+	  }
+}

@@ -1,5 +1,7 @@
 package com.prasadcode.spring.controller;
 
+import java.math.BigDecimal;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -59,4 +61,28 @@ public class WelcomeCtrl2 {
 	  }
 	//TODO
 	//FIX ME
+	  public void test_divide() {
+		  int z = 0;
+		  if (true) {
+		    // ..
+		    z = 3;
+		  } else {
+		    // ..
+			  
+			  //TODO wirte code
+		  }
+		  z = 1 / z; // Noncompliant, possible division by zero
+		  
+		  int target = -5;
+		  int num = 3;
+
+		  target =- num;  // Noncompliant; target = -3. Is that really what's meant?
+		  target =+ num; // Noncompliant; target = 3
+		  
+		  double d = 1.1;
+
+		  BigDecimal bd1 = new BigDecimal(d); // Noncompliant; see comment above
+		  BigDecimal bd2 = new BigDecimal(1.1); // Noncompliant; same result
+		  
+		}
 }
