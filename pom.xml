@@ -34,6 +34,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>SpringMvcIntlTest</finalName> 
+		<finalName>SpringMvcIntlTest</finalName>
 	</build> 
 </project>
